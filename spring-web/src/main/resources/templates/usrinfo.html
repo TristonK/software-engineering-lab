@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:color="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> 工业APP检测中心 | </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="../vendors/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="login">
+<div>
+    <div class="login_wrapper">
+        <div class="animate form login_form">
+            <section class="login_content">
+                <form method="post">
+                    <h1>修改资料</h1>
+                    <div>
+                        <h2>用户ID</h2>
+                        <h3 th:text="${session.usrID}"></h3>
+                    </div>
+                    <div>
+                        <input id="id" type="text" name="name" class="form-control" placeholder="用户名" required/>
+                    </div>
+                    <div>
+                        <input id="password" name="password" type="password" class="form-control" placeholder="密码" required/>
+                    </div>
+                    <div>
+                        <!-- <a class="btn btn-default submit" href="index.html">注册</a>-->
+                        <button type="submit" id="submit_btn"
+                                class="btn btn-primary btn-xs">修改信息</button>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+</body>
+</html>

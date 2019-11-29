@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:color="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> 工业APP检测中心 | </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="../vendors/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="login">
+<div>
+    <div class="login_wrapper">
+        <div class="animate form login_form">
+            <section class="login_content">
+                <form method="post">
+                    <h1>注册账号</h1>
+                    <div>
+                        <input id="id" type="text" name="id" class="form-control" placeholder="用户ID" required/>
+                    </div>
+                    <div>
+                        <input id="name" type="text" name="name" class="form-control" placeholder="用户名" required/>
+                    </div>
+                    <div>
+                        <input id="password" name="password" type="password" class="form-control" placeholder="密码" required />
+                    </div>
+                    <div>
+                        <button type="submit" id="submit_btn"
+                                class="btn btn-primary btn-xs">注册 </button>
+                    </div>
+
+                    <p style="color:red" th:text="${signupInfo}"></p>
+
+                    <div class="clearfix"></div>
+
+                    <div class="separator">
+                        <p class="change_link">已有账号?
+                            <a href="login" class="to_register"> 登录账号 </a>
+                        </p>
+
+                        <div class="clearfix"></div>
+                        <br />
+
+                        <div>
+                            <h1><i class="fa fa-paw"></i> 工业APP检测中心</h1>
+                            <p>©2019 All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
